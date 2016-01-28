@@ -90,14 +90,64 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
             </div>
             
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav">
+<!--
                     <li class="visible-xs"><a href="<?php echo $this->Html->url(array('controller' => 'yarns', 'action' => 'index')); ?>">Garn</a></li>
-                    <li class="visible-xs"><a href="<?php echo $this->Html->url(array('controller' => 'knit', 'action' => 'index')); ?>">Strikepinde/hæklenåle</a></li>
+                    <li class="visible-xs"><a href="<?php echo $this->Html->url(array('controller' => 'needles', 'action' => 'index')); ?>">Strikepinde/hæklenåle</a></li>
+-->
+
                     <li><a href="<?php echo $this->Html->url(array('controller' => 'recipes', 'action' => 'index')); ?>">Opskrifter</a></li>
                     <li><a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index')); ?>">Kontakt</a></li>
                     <li><a href="<?php echo $this->Html->url(array('controller' => 'pages', 'action' => 'conditions')); ?>">Betingelser</a></li>
                     <li><a href="<?php echo $this->Html->url(array('controller' => 'pages', 'action' => 'about')); ?>">Om os</a></li>
                     <li><a href="<?php echo $this->Html->url(array('controller' => 'pages', 'action' => 'newsletter')); ?>">Nyhedsbrev</a></li>
+
+
+                    <?php foreach($menu_tabs as $menu_tab_name => $menu_content) : ?>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">                                    <?php 
+                                    switch ($menu_tab_name) {
+                                            case 'yarn':
+                                                echo 'Garn';
+                                                break;
+                                            case 'knit':
+                                                echo 'Strikkepinde';
+                                                break;
+                                            case 'crochet':
+                                                echo 'Hæklenåle';
+                                                break;
+                                            case 'surplus_yarn':
+                                                echo 'Restgarn';
+                                                break;
+                                        } ?><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                    <?php foreach($menu_content as $key => $menu) : ?>
+                                        <?php if(!is_numeric($key)) {continue;} ?>
+                                        <?php
+                                            if($menu_tab_name == 'knit' || $menu_tab_name == 'crochet')
+                                            {
+                                                $controller = 'needles';
+                                            }
+                                            else if ($menu_tab_name == 'yarn' || $menu_tab_name == 'surplus_yarn') 
+                                            {
+                                                $controller = 'yarns';
+                                            }
+                                        ?>
+                                        <li <?php if($menu['is_active']) echo 'class="active"'; ?>><a href="
+                                        <?php 
+                                            echo $this->Html->url(array(
+                                                'controller' => $controller,
+                                                'action' => 'index',
+                                                $menu['id']
+                                            ));
+                                        ?>
+                                        "><?php echo $menu['name']; ?></a></li>
+                                    <?php endforeach; ?>
+                        </ul>
+                    </li>
+                    <?php endforeach; ?>
+
+                    
                 </ul>
 
                 <!-- CART LINK -->
@@ -232,7 +282,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                                                 echo 'Strikkepinde';
                                                 break;
                                             case 'crochet':
-                                                echo 'Hælkenåle';
+                                                echo 'Hæklenåle';
                                                 break;
                                             case 'surplus_yarn':
                                                 echo 'Restgarn';
@@ -305,3 +355,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 </body>
 
 </html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33288293-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

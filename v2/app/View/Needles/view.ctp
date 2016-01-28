@@ -66,7 +66,7 @@
 						<?php echo $needle_variant['girth']; if($needle_variant['girth_max'] > 0){echo ' - '. $needle_variant['girth_max'];} ?> mm
 					</h4>
 				</div>
-				<div id="sale" class="well clearfix">
+				<div id="sale" class="well clearfix hidden-xs">
 					<div class="row-fluid" style="text-align:center; vertical-align:middle;">
 						<p style="margin:0;display:none;" id="previous_price_container">Før <s id="previous_price">DKK100,00</s></p>
 						<label id="price" style="font-size:1.3em;position:relative; top:3px;"></label> 
@@ -159,6 +159,104 @@
 						</script>
 						
 				</div>
+
+
+
+				<div id="sale2" class="well clearfix visible-xs">
+					<div class="row-fluid" >
+						<p id="previous_price_container2">Før <s id="previous_price2">DKK100,00</s></p>
+						<label id="price2" style="font-size:1.3em;position:relative; top:3px;"></label> 
+						<span style="line-height:35px; margin:0;" class="label" id="availability2"></span>
+						<p id="item_quantity2" style="display:none;" class="text-muted"></p>
+					</div>
+					
+					<?php echo $this->Form->create('Orders', array(
+						'action' => 'add_needle_variant', 
+						 'class' => 'form-inline',
+						 'inputDefaults' => array(
+							'div' => 'form-group',
+							'wrapInput' => false,
+							'class' => 'form-control',
+							'label' => false,))); ?>
+
+
+
+	                    <!-- The amount input -->
+                        <?php echo $this->Form->input('amount', array( 'div' => false, 'value' => 1, 'type' => 'number', 'label' => false, 'before' => '<label style="position:relative; float:left; ">Antal</label>')); ?>
+
+	                    <!-- The id input (hidden) -->
+	                    <?php echo $this->Form->input('needle_variant_id', array('label' => false, 'value' => $needle_variant['id'], 'type' => 'text', 'style' => 'display:none;')); ?>
+	                    
+	                    <!-- The refresh button  -->
+	                    <button type="submit" class="btn btn-default" style="margin-top:-2px;">
+	                    	<span class="glyphicon glyphicon-shopping-cart"></span> Læg i kurv 
+	                    </button>
+	                    <?php echo $this->Form->end(); ?>
+
+	                    <!-- Modal -->
+						<div class="modal fade" id="image_popup_modal" tabindex="-1" role="dialog" aria-labelledby="image_popup_modal_label">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img id="image_popup" style="width:100%;" src="<?php echo $this->Html->url('/img/needle_variants/'. $needle_variant['id'].'.png'); ?>"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+	                    <script type="text/javascript">
+						$( document ).ready(function() {
+						    	$('#price2').text("<?php echo $this->Number->currency($needle_variant['price'], 'DKK');?>");
+						    	if(<?php echo $needle_variant['show_discount']; ?> && <?php echo $needle_variant['discount']; ?> > 0)
+						    	{
+						    		$('#previous_price_container2').show();
+						    		$('#previous_price2').text("<?php echo $this->Number->currency($needle_variant['previous_price'], 'DKK');?>");
+
+						    		$('#discount').show();
+						    		$('#discount').text("- <?php echo $needle_variant['discount']; ?>%");
+						    	}
+						    	else
+						    	{
+						    		$('#previous_price_container2').hide();
+						    		$('#discount').hide();
+						    	}
+						    	$('#product_code').text("<?php echo $needle_variant['product_code'];?>");
+						    	$('#intern_product_code').text("<?php echo $needle_variant['intern_product_code'];?>");
+						    	if(<?php echo $needle_variant['item_quantity']; ?> > 1)
+						    	{
+						    		$("#item_quantity2").css("display", "block");
+						    		$("#item_quantity2").text("Der er <?php echo $needle_variant['item_quantity'] ?> produkter i denne varer");
+						    	}
+						    	$('#availability2').text("<?php
+
+						    	 		echo $needle_variant['AvailabilityCategory']['name'];  
+						    	 		if($needle_variant['AvailabilityCategory']['show_amount'])
+						    	 		{
+						    	 			echo ' ('. $needle_variant['stock_quantity'] . ' tilbage)';
+						    	 		}
+						    	 ?>");
+						    	$("#availability2").removeClass();
+						    	$('#availability2').addClass("label label-<?php echo $needle_variant['AvailabilityCategory']['color']; ?>");
+						    	if("<?php echo $needle_variant['length'];?>" > 0)
+						    	{
+						    		$("#length_row").show();
+						    		$("#length_title").text("Længde på <?php if($needle_variant['is_wire']) echo 'wire'; else echo 'pind';?> cm");
+							 		$("#length").text("<?php echo $needle_variant['length'];?> cm");
+						    	}
+						    	else
+						    	{
+						    		$("#length_row").hide();
+						    	}
+						    	
+							 	$("#girth").text("<?php echo $needle_variant['girth']; if($needle_variant['girth_max'] > 0){echo ' - '. $needle_variant['girth_max'];} ?> mm");
+			
+							});	
+						</script>
+						
+				</div>
+
+
+
 			<?php break; ?>
 			<?php endif;?>
 		<?php endforeach; ?>
@@ -295,6 +393,8 @@
 		    	{
 		    		$("#item_quantity").css("display", "none");
 		    	}
+
+                window.scrollTo(0, 0);
 
 			});
 		

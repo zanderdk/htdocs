@@ -3,6 +3,11 @@ body
     background: url('/v2/img/bg.png') repeat;
 }
 
+#firstInput .leftAlign{
+    float: left;
+     width:300px;
+ }
+
 .panel-group .panel
 {
     border-radius: 0px;

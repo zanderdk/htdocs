@@ -148,7 +148,7 @@
                         <?php echo $yarn_variant['color_code']; ?>
                     </h4>
                 </div>
-                <div id="sale" class="well">
+                <div id="sale" class="well hidden-xs">
                     <div class="row-fluid" style="text-align:center; vertical-align:middle;">
                         <p style="margin:0;display:none;" id="previous_price_container">Før <s id="previous_price">DKK100,00</s></p>
                         <label id="price" style="font-size:1.3em;position:relative; top:3px;"></label> 
@@ -247,6 +247,114 @@
                         </div>
                     </div>
                 </div>
+
+
+
+                <div id="sale2" class="well visible-xs">
+                    <div class="row-fluid">
+                        <p id="previous_price_container2">Før <s id="previous_price2">DKK100,00</s></p>
+                        <label style="font-size:1.3em;position:relative; top:3px;" id="price2"></label> 
+                        <span class="label" id="availability2"></span>
+                        <p id="item_quantity2" style="display:none;" class="text-muted"></p>
+                    </div>
+                    <div class="row-fluid">
+                    </div>
+                    <?php echo $this->Form->create('Orders', array(
+                        'action' => 'add_yarn_batch', 
+                         'class' => 'form-inline',
+                         'style' => 'text-align:center;',
+                         'inputDefaults' => array(
+                            'div' => 'form-group',
+                            'wrapInput' => false,
+                            'class' => 'form-control',
+                            'label' => false,))); ?>
+
+                        <?php 
+                        $options = array();
+                        $first_yarn_batch = null;
+                        foreach ($yarn_variant['YarnBatch'] as $key => $yarn_batch) 
+                        {
+                            if($yarn_batch['is_active']) {
+                                $options[$yarn_batch['id']] = $yarn_batch['batch_code'];    
+                                if($first_yarn_batch == null)
+                                {
+                                    $first_yarn_batch = $yarn_batch;
+                                }
+                            }
+
+                        } ?>
+
+                        <script type="text/javascript">
+                        $( document ).ready(function() {
+                                $('#price2').text("<?php echo $this->Number->currency($first_yarn_batch['price'], 'DKK');?>");
+                                if(<?php echo $first_yarn_batch['show_discount']; ?> && <?php echo $first_yarn_batch['discount']; ?> > 0)
+                                {
+                                    $('#previous_price_container2').show();
+                                    $('#previous_price2').text("<?php echo $this->Number->currency($first_yarn_batch['previous_price'], 'DKK');?>");
+
+                                    $('#discount').show();
+                                    $('#discount').text("- <?php echo $first_yarn_batch['discount']; ?>%");
+                                }
+                                else
+                                {
+                                    $('#previous_price_container2').hide();
+                                    $('#discount').hide();
+                                }
+                                
+                                
+                                $('#color_code').text("<?php echo $yarn_variant['color_code']; ?>");
+                                if(<?php echo $first_yarn_batch['item_quantity']; ?> > 1)
+                                {
+                                    $("#item_quantity2").css("display", "block");
+                                    $("#item_quantity2").text("Der er <?php echo $first_yarn_batch['item_quantity'] ?> produkter i denne varer");
+                                }
+                                $('#availability2').text("<?php
+
+                                        echo $first_yarn_batch['AvailabilityCategory']['name'];  
+                                        if($first_yarn_batch['AvailabilityCategory']['show_amount'])
+                                        {
+                                            echo ' ('. $first_yarn_batch['stock_quantity'] . ' tilbage)';
+                                        }
+                                 ?>");
+                                $("#availability2").removeClass();
+                                $('#availability2').addClass("label label-<?php echo $first_yarn_batch['AvailabilityCategory']['color']; ?>");
+
+                                $("#batch_code").text("<?php echo $first_yarn_batch['batch_code'];?>");
+                                $("#intern_product_code").text("<?php echo $first_yarn_batch['intern_product_code'];?>");
+            
+                            }); 
+                        </script>
+
+                        <!-- The amount input -->
+                        <?php echo $this->Form->input('amount', array('div'=>false, 'value' => 1, 'type' => 'number', 'label' => false,  'before' => '<label style=" float:left;">Antal</label>')); ?>
+
+                        <!-- The id input  -->
+                        <?php echo $this->Form->input('yarn_batch_id', array( 'div'=>false, 'id' => 'yarn_batch_input','required' => true, 'label' => false, 'options' => $options, 'before' => '<label style=" float:left;">Partinummer</label>')); ?>
+                        
+                        <br/>
+
+                        <!-- The refresh button  -->
+                        <button type="submit" style="float:left;" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Læg i kurv 
+                        </button>
+                    <?php echo $this->Form->end(); ?>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="image_popup_modal" tabindex="-1" role="dialog" aria-labelledby="image_popup_modal_label">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img id="image_popup" style="width:100%;" src="<?php echo $this->Html->url('/img/yarn_variants/'. $yarn_variant['id'].'.png'); ?>"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <br/>
+                </div>
+
+
+
+
             <?php break; ?>
             <?php endif;?>
         <?php endforeach; ?>
@@ -460,6 +568,8 @@
                             break;
                         }
                     ?>
+
+                window.scrollTo(0, 0);
 
                 });
             
