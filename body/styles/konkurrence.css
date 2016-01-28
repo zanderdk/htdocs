@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+
+body {
+	background: url('../_gfx/bg3.png') repeat;
+	font-family: 'Trebuchet', sans-serif;
+}
+
+em {
+	color: #900000;
+	font-size: 10pt;
+}
+
+.container {
+	margin:0 auto;
+	margin-top: 20px;
+	width:400px;
+}
+
+.container h1 {
+	font-size: 25pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+.container .img_container {
+	margin: 0 auto;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 380px;
+	height:200px;
+	margin-top:20px;
+}
+	.container .img_container .img {
+		background-size: 100% 100%;
+		width: 100%;
+		height: 100%;
+		background: url('../_gfx/competition.png')	
+	}
+
+.container p {
+	color: #888;
+	font-size: 10pt;
+	text-align: justify;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.container b p {
+	color: #222;
+	font-size: 12pt;
+
+}
+
+.container h5 {
+	color: #555;
+	line-height: 25px;
+	z-index: 1;
+	position: relative;
+	left:10px;
+	width: 10%;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.container form {
+	margin-top: 10px;
+}
+
+.container input {
+   width: 100%;
+   background: rgba(0,0,0,0.05);
+   border: 1px solid #888;
+   padding: 6px 10px;
+   font-size: 12pt;
+   font-family: 'Archivo Narrow', sans-serif;
+   font-weight: bold;
+   color: #444;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.container input#text {
+	background: #eee;
+	margin-top: -10px;
+	z-index: 0;
+	position: relative;
+  	padding-left: 55px;
+  	width: 332px;
+  	font-size: 11pt;
+  	top:-18px;
+  	font-weight: normal;
+   }
+
+.container input.grey {
+         -webkit-box-shadow: inset -1px -1px 2px rgba(0,0,0,0.25);
+         outline: none;
+         background: #f2f2f2;
+      }
+
+         .container input.grey:active {
+            -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.25);
+            background: #ddd;
+         }
+
+

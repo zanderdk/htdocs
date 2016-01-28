@@ -1,0 +1,109 @@
+body
+{
+    background: url('/henrik/er/tyk/img/bg.png') repeat;
+}
+
+.panel-group .panel
+{
+    border-radius: 0px;
+}
+
+.side-menu 
+{
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+.side-menu .panel-heading
+{
+    cursor: pointer;
+}
+
+.side-menu .panel-heading a
+{
+    text-decoration: none;
+}
+
+.content 
+{
+    border:1px solid #e7e7e7;
+    background: #fff;
+}
+
+.error-msg
+{
+    display:block; 
+    margin-top:5px;
+}
+
+#cart_item {
+    text-decoration:none; color:black;
+}
+
+#cart_item:hover
+{
+    color:#900000;
+    text-decoration: underline;
+}
+
+.product_title  {
+    text-align:center; 
+    background:rgba(0,0,0,0.3); 
+    color:#fff; 
+    position: 
+    absolute; 
+    bottom: 15px; 
+    padding:5px;
+    -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.product_container:hover .product_title  {
+    background:rgba(0,0,0,0.7); 
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+
+/* Added label class for coloring */
+.label-supreme {
+  background-color: #4E8535;
+}
+
+
+.discount {
+    display: block;
+    height: 66px;
+    width: 66px;
+    line-height: 66px;
+
+    -moz-border-radius: 33px; /* or 50% */
+    border-radius: 33px; /* or 50% */
+
+    background-color: #900000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 100;
+    position: absolute;
+    top:15px;
+    left:30px;
+} 
+
+.card {
+    width: 50px;
+    float: left;
+}
+.wrapper {
+    width: 150px;
+    margin: 0 auto;
+}
+.payments {
+    text-align: center;
+    width: 100%;
+}

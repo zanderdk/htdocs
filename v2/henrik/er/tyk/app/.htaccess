@@ -1,0 +1,12 @@
+php_value post_max_size 1000M
+php_value upload_max_filesize 2500M
+php_value max_execution_time 6000000
+php_value max_input_time 6000000
+php_value memory_limit 2500M
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTPS} !=on [NC]
+    RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]
+</IfModule>

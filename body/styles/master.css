@@ -1,0 +1,255 @@
+body {
+	background: url('../_gfx/bg3.png') repeat;
+	font-family: 'Trebuchet', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+b {
+	font-weight: bold;
+}
+
+.button {
+   width: 90%;
+   margin: 10px 5%;
+   background: rgba(0,0,0,0.05);
+   border: 1px solid #888;
+   padding: 6px 10px;
+   font-size: 11pt;
+   font-family: 'Archivo Narrow', sans-serif;
+   color: #444;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: inset -1px -1px 2px rgba(0,0,0,0.25);
+   outline: none;
+}
+
+   .button:active {
+      -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.25);
+      background: #ddd;
+   }
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+.header_wrapper {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+	.header h1 {
+		line-height: 50px;
+		background: url('../_gfx/logo.png') no-repeat left center;
+		text-indent: -99999px;
+		width: 247px;
+		float: left;
+		padding: 10px 0;
+	}
+	
+	.header h2 {
+		background: url('../_gfx/mf.png') no-repeat left center;
+		text-indent: -99999px;
+		float: right;
+		width: 150px;
+		line-height: 50px;
+		margin-right: 60px;
+		padding: 10px 0;
+	}
+	
+	.header ul {
+		float: left;
+		margin-left: 40px;
+	}
+		
+		.header ul li {
+			display: inline;
+			line-height: 75px;
+			padding: 10px;
+			border-right: 1px solid #bbb;
+		}
+		
+		.header ul li a {
+			color: #bbb;
+			text-decoration: none;
+			font-size: 11pt;
+		}
+		
+			.header ul li a:hover {
+				color: #555;
+			}
+		
+			.header ul li:last-child {
+				border-right: none;
+			}
+	
+	.menu {
+		margin: 10px 0 0 0;
+	}
+
+	.menu table {
+		background: #fff;
+		width: 100%;
+		border: 1px solid #aaa;
+		margin-bottom: 20px;
+	}
+	
+		.menu table .title {
+			background: #900000;
+			color: #fff;
+			border: 1px solid #900000;
+		}
+			
+			.menu table .title td {
+				padding: 10px;
+			}
+
+		.menu table .subtitle {
+		   background-color: #fff; /* Design of the sub-categories */
+      }
+		
+			.menu table .subtitle td ul li {
+				padding: 10px;
+				border-top: 1px solid #aaa;
+			}
+			
+				.menu table .subtitle td ul li a {
+					color: #666;
+					
+				}
+	
+		.menu table .head {
+			background: #eee;
+			border-top: 1px solid #aaa;
+			cursor: pointer;
+		}
+		
+			.menu table .head td {
+				padding: 10px;
+			}
+
+			.menu table .head:hover td {
+				background: #ddd;
+			}
+		
+		.menu table .body {
+			display: none;
+			border-top: 1px solid #aaa;
+			font-size: 11pt;
+			padding: 0 10px;
+		}
+		
+				.menu table .body td ul li {
+					padding: 10px;
+					border-bottom: 1px dashed #aaa;
+				}
+
+				.menu table .body td ul li:hover {
+					background: #f5f5f5;
+				}
+				
+				.menu table .body ul li:last-child{
+					border-bottom: none;
+				}
+			
+				.menu table .body td ul li a {
+					text-decoration: none;
+					color: #000;
+				}
+				
+		
+		.menu table .cards {
+		   background: #fff;
+		   border-top: 1px solid #aaa;
+		}
+		
+		   .menu table .cards td {
+		      padding: 10px;
+		   }
+		   
+		   .menu table .cards td p {
+		      text-align: center;
+		      margin-bottom: 5px;
+		      font-size: 11pt;
+		   }
+		   
+		   .menu table .cards td img {
+		      margin: 7px 12px;
+		   }
+		   
+		   .menu table .recipe td input[name=search] {
+		      border: none;
+		      background: none;
+		      width: 129px;
+		      font-size: 12pt;
+		      margin-top: -1px;
+		      padding: 5px;
+		      
+		      border-bottom: 1px solid #aaa;
+		   }
+		   
+		      .menu table .recipe td a {
+		         text-decoration: none;
+		      }
+		   
+		      .menu table .recipe td a p {
+		         text-align: center;
+		         padding: 10px 5px;
+		         background: #fff;
+		         color: #900000;
+		         font-size: 11pt;
+		         margin-top: -2px;
+		      }
+		      
+		         .menu table .recipe td a p:hover {
+		            background: #f8f8f8;
+		         }
+		         
+		         .menu table .recipe td a p:active {
+		            background: #efefef;
+		         }
+	
+.container {
+	margin-top: 10px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 16px;
+	}
+	
+	.container .content img {
+		width: 100%;
+	}
+	
+	.container .content {
+		padding: 15px;
+	}
+	
+	.footer {
+		float: right;
+		margin-bottom: 20px;
+	}
+	
+	.element67 {
+		float: left;
+		background: url('../_gfx/watermark.png') repeat;
+		width: 100px;
+		height: 38px;
+		margin-right: 80px;
+	}
+
+	.cancer {
+		float:left;
+		background: url('../_gfx/cancer.png') no-repeat;
+		height: 40px;
+		width:71px;
+
+	}
+	
+
+
+
+	
