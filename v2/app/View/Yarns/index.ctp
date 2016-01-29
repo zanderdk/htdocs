@@ -20,8 +20,11 @@
         <?php if($yarn['Yarn']['product_count'] > 0 || $logged_in) : ?>
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                 <?php $my_params = array(
+                     str_replace(' ', '_', $yarn['Yarn']['name'])
+                );  ?>
                 <div
-                 onclick="window.location = '<?php echo $this->Html->url(array('controller' => 'yarns', 'action' => 'view', $yarn['Yarn']['id'])); ?>';"
+                 onclick="window.location = '<?php echo $this->Html->url( array_merge(array('controller' => 'yarns', 'action' => 'view', $yarn['Yarn']['id']), $my_params)); ?>';"
                  id="yarn_image<?php echo $yarn['Yarn']['id'];?>" 
                  class="thumbnail product_container" 
                  style="width:100%; cursor:pointer;">

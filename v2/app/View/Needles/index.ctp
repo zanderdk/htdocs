@@ -18,10 +18,18 @@
 <div class="row">
     <?php foreach ($needles as $key => $needle) : ?>
         <?php if($needle['Needle']['product_count'] > 0 || $logged_in) : ?>
+        
+        <?php
+
+        $my_parms = array(
+            str_replace(' ', '_', $needle['Needle']['name'])
+        );
+
+        ?>
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-bottom:20px;">
                 <div
-                 onclick="window.location = '<?php echo $this->Html->url(array('controller' => 'needles', 'action' => 'view', $needle['Needle']['id'])); ?>';"
+                 onclick="window.location = '<?php echo $this->Html->url(array_merge(array('controller' => 'needles', 'action' => 'view', $needle['Needle']['id']), $my_parms)); ?>';"
                  id="needle_image<?php echo $needle['Needle']['id'];?>" 
                  class="thumbnail product_container" 
                  style="width:100%; cursor:pointer;">
