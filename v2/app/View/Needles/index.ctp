@@ -18,11 +18,11 @@
 <div class="row">
     <?php foreach ($needles as $key => $needle) : ?>
         <?php if($needle['Needle']['product_count'] > 0 || $logged_in) : ?>
-        
+
         <?php
 
         $my_parms = array(
-            str_replace(' ', '_', $needle['Needle']['name'])
+            str_replace('/', '_', str_replace(' ', '_', $needle['Needle']['name']))
         );
 
         ?>
@@ -30,12 +30,12 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-bottom:20px;">
                 <div
                  onclick="window.location = '<?php echo $this->Html->url(array_merge(array('controller' => 'needles', 'action' => 'view', $needle['Needle']['id']), $my_parms)); ?>';"
-                 id="needle_image<?php echo $needle['Needle']['id'];?>" 
-                 class="thumbnail product_container" 
+                 id="needle_image<?php echo $needle['Needle']['id'];?>"
+                 class="thumbnail product_container"
                  style="width:100%; cursor:pointer;">
-                    <?php 
+                    <?php
                     $image_url = '';
-                    foreach ($needle['NeedleVariant'] as $key => $needle_variant) 
+                    foreach ($needle['NeedleVariant'] as $key => $needle_variant)
                     {
                         if($needle_variant['is_active'])
                         {
@@ -46,7 +46,7 @@
 
                     ?>
                     <div style="width:100%; height:100%;background: url(<?php echo $image_url ?>); background-repeat:no-repeat; background-position: center; background-size:cover;"
-                    <?php if($logged_in && !($needle['Needle']['product_count'] > 0)) 
+                    <?php if($logged_in && !($needle['Needle']['product_count'] > 0))
                     {
                         echo 'id="needle_warning'. $needle['Needle']['id']. '" data-toggle="tooltip" data-placement="top" title="Vises ikke til brugeren"';
                     }?>
@@ -76,7 +76,7 @@
                                     </a>
                                 <?php endif; ?>
                             </div>
-                            
+
 
                         <?php endif; ?>
 
@@ -87,8 +87,8 @@
                     </div>
                 </div>
 
-                
-                
+
+
             </div>
 
             <!-- Script to handle the scaling -->
@@ -96,7 +96,7 @@
                 $('#needle_warning<?php echo $needle['Needle']['id'];?>').tooltip();
                 $('#needle_image<?php echo $needle['Needle']['id'];?>').height($('#needle_image<?php echo $needle['Needle']['id'];?>').width() * 0.63);
                 $('#needle_title<?php echo $needle['Needle']['id'];?>').width($('#needle_image<?php echo $needle['Needle']['id'];?>').width());
-            
+
                 $( window ).resize(function() {
                     $('#needle_image<?php echo $needle['Needle']['id'];?>').height($('#needle_image<?php echo $needle['Needle']['id'];?>').width() * 0.63);
                     $('#needle_title<?php echo $needle['Needle']['id'];?>').width($('#needle_image<?php echo $needle['Needle']['id'];?>').width()-20);

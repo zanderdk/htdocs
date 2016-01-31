@@ -21,16 +21,16 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                  <?php $my_params = array(
-                     str_replace(' ', '_', $yarn['Yarn']['name'])
+                     str_replace('/', '_', str_replace(' ', '_', $yarn['Yarn']['name']))
                 );  ?>
                 <div
                  onclick="window.location = '<?php echo $this->Html->url( array_merge(array('controller' => 'yarns', 'action' => 'view', $yarn['Yarn']['id']), $my_params)); ?>';"
-                 id="yarn_image<?php echo $yarn['Yarn']['id'];?>" 
-                 class="thumbnail product_container" 
+                 id="yarn_image<?php echo $yarn['Yarn']['id'];?>"
+                 class="thumbnail product_container"
                  style="width:100%; cursor:pointer;">
-                    <?php 
+                    <?php
                     $image_url = '';
-                    foreach ($yarn['YarnVariant'] as $key => $yarn_variant) 
+                    foreach ($yarn['YarnVariant'] as $key => $yarn_variant)
                     {
                         if($yarn_variant['is_active'] && $yarn_variant['is_thumbnail'])
                         {
@@ -41,7 +41,7 @@
 
                     ?>
                     <div style="width:100%; height:100%;background: url(<?php echo $image_url ?>); background-repeat:no-repeat; background-position: center; background-size:cover;"
-                    <?php if($logged_in && !($yarn['Yarn']['product_count'] > 0)) 
+                    <?php if($logged_in && !($yarn['Yarn']['product_count'] > 0))
                     {
                         echo 'id="yarn_warning'. $yarn['Yarn']['id']. '" data-toggle="tooltip" data-placement="top" title="Vises ikke til brugeren"';
                     }?>
@@ -71,7 +71,7 @@
                                     </a>
                                 <?php endif; ?>
                             </div>
-                            
+
 
                         <?php endif; ?>
 
@@ -82,8 +82,8 @@
                     </div>
                 </div>
 
-                
-                
+
+
             </div>
 
             <!-- Script to handle the scaling -->
@@ -91,7 +91,7 @@
                 $('#yarn_warning<?php echo $yarn['Yarn']['id'];?>').tooltip();
                 $('#yarn_image<?php echo $yarn['Yarn']['id'];?>').height($('#yarn_image<?php echo $yarn['Yarn']['id'];?>').width() * 0.63);
                 $('#yarn_title<?php echo $yarn['Yarn']['id'];?>').width($('#yarn_image<?php echo $yarn['Yarn']['id'];?>').width());
-            
+
                 $( window ).resize(function() {
                     $('#yarn_image<?php echo $yarn['Yarn']['id'];?>').height($('#yarn_image<?php echo $yarn['Yarn']['id'];?>').width() * 0.63);
                     $('#yarn_title<?php echo $yarn['Yarn']['id'];?>').width($('#yarn_image<?php echo $yarn['Yarn']['id'];?>').width()-20);
