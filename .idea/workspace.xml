@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07f308ab-936c-4877-8e57-0450f4876b0b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_categories" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_categories_recipes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_competitions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_coupons_needle_variants" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_coupons_yarn_batches" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_participants" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_da" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_dev_da" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_dev_eng" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_eng" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/Controller/OrdersController.php" afterPath="$PROJECT_DIR$/v2/app/Controller/OrdersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/Controller/PaymentsController.php" afterPath="$PROJECT_DIR$/v2/app/Controller/PaymentsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp" afterPath="$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_availability_categories" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_availability_categories" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_brands" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_brands" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_coupons" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_coupons" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_customers" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_customers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_list" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_materials" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_materials" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_menus" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_menus" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needle_variants" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needle_variants" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needles" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needles" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_order_items" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_order_items" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_orders" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_orders" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_recipes" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_recipes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_batches" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_batches" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_parts" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_parts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarns" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_cake_dev_en-us" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_cake_dev_en-us" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_cake_en-us" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_cake_en-us" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_file_map" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_file_map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_method_cache" afterPath="$PROJECT_DIR$/v2/app/tmp/cache/persistent/myapp_cake_core_method_cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app/tmp/logs/error.log" afterPath="$PROJECT_DIR$/v2/app/tmp/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/View/Orders/view_unplaced_order.ctp" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/View/Orders/view_unplaced_order.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_availability_categories" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_availability_categories" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_brands" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_brands" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_care_labels" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_care_labels" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_care_labels_yarns" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_care_labels_yarns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_colors" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_colors" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_coupons" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_coupons" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_customers" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_customers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_frontpage_items" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_frontpage_items" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_list" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_materials" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_materials" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_menus" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_menus" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needle_variants" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needle_variants" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needles" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_needles" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_order_items" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_order_items" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_orders" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_orders" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_recipes" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_recipes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_recipes_yarns" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_recipes_yarns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_users" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_users" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_batches" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_batches" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_parts" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_parts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_variants" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarn_variants" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarns" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/models/myapp_cake_model_default_bundgaardsgarn_dk_db2_yarns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_dev_en-us" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_dev_en-us" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_en-us" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_cake_en-us" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_file_map" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_file_map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_method_cache" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/cache/persistent/myapp_cake_core_method_cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/logs/error.log" afterPath="$PROJECT_DIR$/v2/henrik/er/tyk/app/tmp/logs/error.log" />
+    </list>
+    <ignored path="htdocs.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="htdocs" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="PagesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/app/Controller/PagesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.6">
+              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrdersController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v2/app/Controller/OrdersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.03202847">
+              <caret line="658" column="0" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/app/View/Yarns/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_as_receipt.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_as_receipt.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="billing.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/billing.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_unplaced_order.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="160" column="3" selection-start-line="160" selection-start-column="3" selection-end-line="160" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/v2/app/View/Yarns/index.ctp" />
+        <option value="$PROJECT_DIR$/v2/app/View/Needles/index.ctp" />
+        <option value="$PROJECT_DIR$/v2/app/Controller/PaymentsController.php" />
+        <option value="$PROJECT_DIR$/v2/app/Controller/OrdersController.php" />
+        <option value="$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="60" />
+    <option name="width" value="2560" />
+    <option name="height" value="1380" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yarns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Payments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Orders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Needles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.accepted" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/activator-1.3.7-minimal/play" value="1451472663848" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07f308ab-936c-4877-8e57-0450f4876b0b" name="Default" comment="" />
+      <created>1454239949677</created>
+      <option name="number" value="Default" />
+      <updated>1454239949677</updated>
+      <workItem from="1454239951015" duration="7592000" />
+      <workItem from="1454435580918" duration="1008000" />
+      <workItem from="1454527884545" duration="4629000" />
+      <workItem from="1454613864471" duration="2111000" />
+      <workItem from="1454958931392" duration="11000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix '/' fejl">
+      <created>1454245696742</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1454245696742</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15351000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="60" width="2560" height="1380" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix '/' fejl" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix '/' fejl" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PaymentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/OrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="658" column="0" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Yarns/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_as_receipt.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/billing.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="3" selection-start-line="160" selection-start-column="3" selection-end-line="160" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Yarns/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_as_receipt.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/billing.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Yarns/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_as_receipt.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/billing.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="165" column="7" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PaymentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Yarns/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_as_receipt.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/billing.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/pay.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Yarns/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Needles/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_as_receipt.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Payments/billing.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/View/Orders/view_unplaced_order.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="3" selection-start-line="160" selection-start-column="3" selection-end-line="160" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.6">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/PaymentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.9777775">
+          <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app/Controller/OrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03202847">
+          <caret line="658" column="0" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
