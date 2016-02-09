@@ -1,11 +1,11 @@
-<?php 
+<?php
 App::uses('AppController', 'Controller');
 App::uses('Paypal', 'Paypal.Lib');
 App::uses('Customer', 'AppModel');
 App::uses('CakeEmail', 'Network/Email');
 App::import('Controller', 'Orders');
 
-class PaymentsController extends AppController 
+class PaymentsController extends AppController
 {
     // Helpers
     public $helpers = array('Html');
@@ -14,7 +14,7 @@ class PaymentsController extends AppController
     public $default_shipping_price = 39;
     public $free_shipping_threshold = 500;
 
-    // Internal varialbe to deal with 
+    // Internal varialbe to deal with
     private $dibs_accepted = false;
 
     public function beforeFilter()
@@ -24,7 +24,7 @@ class PaymentsController extends AppController
         $this->Auth->allow('cart', 'billing', 'pay', 'accept_payment');
     }
 
-    public function cart() 
+    public function cart()
     {
         $this->loadModel('Order');
         $this->set('order',$this->Order->find('first', array('conditions' => array('Order.id' => $this->Cookie->read('Order.id')), 'recursive' => 4)));
@@ -34,7 +34,7 @@ class PaymentsController extends AppController
     {
         $this->loadModel('Order');
         $order = $this->Order->find('first', array('conditions' => array('Order.id' => $this->Cookie->read('Order.id')),  'recursive' => 2));
-        
+
         if(count($order['OrderItem']) < 1)
         {
             $this->Session->setFlash('Din indkøbskurv er tom.'.$this->Session->read('Message.warning.message'), null, array(), 'warning');
@@ -44,15 +44,15 @@ class PaymentsController extends AppController
         if($order['Customer']['id'] != 0)
         {
             $customer = $order['Customer'];
-        } 
-        else 
+        }
+        else
         {
             $customer = $order['Customer'];
             $customer['BillingAddress'] = array('id' => null, 'zip_code' => null, 'city_name' => null, 'street' => null);
             $customer['ShippingAddress'] = array('id' => null, 'zip_code' => null, 'city_name' => null, 'street' => null);
         }
 
-        $customer['ShippingAddress']['same_shipping_address'] = $customer['ShippingAddress']['zip_code'] == $customer['BillingAddress']['zip_code'] && 
+        $customer['ShippingAddress']['same_shipping_address'] = $customer['ShippingAddress']['zip_code'] == $customer['BillingAddress']['zip_code'] &&
         $customer['ShippingAddress']['city_name'] == $customer['BillingAddress']['city_name'] &&
         $customer['ShippingAddress']['street'] == $customer['BillingAddress']['street'];
 
@@ -60,15 +60,15 @@ class PaymentsController extends AppController
         $this->set('customer_note', $order['Order']['customer_note']);
 
         if($this->request->is('post'))
-        {   
+        {
             // Save customer data
             if(!isset($order['Customer']['id']))
             {
                 $this->Order->Customer->create();
-            } 
+            }
 
             if(!$this->Order->Customer->save($this->data))
-            {   
+            {
                 // The save went wrong
                 $this->Session->setFlash('Dine oplysninger blev ikke gemt.'.$this->Session->read('Message.error.message'), null, array(), 'error');
             }
@@ -86,28 +86,28 @@ class PaymentsController extends AppController
 
             $this->Order->saveField('conditions_accepted', true);
 
-            $this->redirect(array('controller' => 'orders', 'action' => 'view_unplaced_order'));    
-        }   
+            $this->redirect(array('controller' => 'orders', 'action' => 'view_unplaced_order'));
+        }
     }
 
     public function accept_payment($order_id)
     {
 
         $this->redirect(array('controller' => 'pages', 'action' => 'home'));
-        
+
     }
 
     // Used to fetch dibs return DATA
     private function check_dibs_status()
     {
         if($this->request->is('post'))
-        {   
-            if(!empty($this->request['data']['transact']) && !empty($this->request['data']['orderid']) && !empty($this->request['data']['statuscode']) && $this->request['data']['statuscode'] == 5)
+        {
+            if(!empty($this->request['data']['transact']) && !empty($this->request['data']['orderid']) && !empty($this->request['data']['statuscode']) && ($this->request['data']['statuscode'] == 5  || $this->request['data']['statuscode'] == 2))
             {
                 $transaction_id = $this->request['data']['transact'];
                 $this->loadModel('Order');
                 $order = $this->Order->find('first', array('conditions' => array('Order.id' => $this->request['data']['orderid']), 'recursive' => 4));
-                
+
                 if(!empty($order) && $order['Order']['state'] == 'unplaced')
                 {
                     // Send the email receipt
@@ -124,8 +124,8 @@ class PaymentsController extends AppController
                     $this->Order->updateStockQuantityAfterPurchase();
 
                     $this->Session->write('Payment.accepted', true);
-                    $this->Session->write('Payment.transaction_id', $this->request['data']['transact']);    
-                }                
+                    $this->Session->write('Payment.transaction_id', $this->request['data']['transact']);
+                }
             }
         }
     }
